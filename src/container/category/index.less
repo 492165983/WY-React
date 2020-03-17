@@ -1,0 +1,95 @@
+.category{
+  width: 100%;
+  height: 667.33px;
+  background-color: #fff;
+  overflow: hidden;
+  box-sizing: border-box;
+  // 头部搜索
+  .header_search{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 375px;
+    height: 44px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    background-color: #fff;
+    z-index: 99;
+    .search{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 28px;
+      background-color: #EDEDED;
+      border-radius: 5px;
+      margin: 8px 0;
+      span{
+        font-size: 14px;
+        color: #666;
+        margin-left: 2px;
+      }
+    }
+  }
+  // 内容区域
+  .cateCenter{
+    // box-sizing: border-box;
+    margin-top: 50px;
+    position: relative;
+    .sidebar{
+      position: absolute;
+      top: 0;
+      left: 0;
+      .am-tabs-content-wrap{
+        width: 0;
+        height: 0;
+      }
+    }
+    // 商品列表
+    .wrap{
+      position: absolute;
+      left: 80px;
+      top: 0;
+      width: 260px;
+      height: 558px;
+      padding: 5px 15px 0 0;
+      overflow: hidden;
+      // box-sizing: border-box;
+      // 显示内容区域
+      .cate_center{
+        width: 260px;
+        // 大图
+        .banner{
+          width: 100%;
+          height: 100%;
+          img{
+            width: 264px;
+            height: 96px;
+          }
+        }
+        // 商品区
+        .cateItem{
+          width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          // height: 567.33px;
+          // overflow: hidden;
+
+          li{
+            width: 77px;
+            height: 108px;
+            img{
+              width: 77px;
+              height: 77px;
+            }
+            p{
+              text-align: center;
+              color: #666;
+            }
+          }
+        }
+      }
+    }
+  }
+}

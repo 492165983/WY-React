@@ -9,47 +9,47 @@ export default class TabBarExample extends Component {
     super(props);
     this.state = {
       selectedTab: "/home",
-      hidden: false,
+      hidden: false
     };
   }
 
   createMenus = menus => {
     return menus.map(menu => {
       return (
-          <TabBar.Item
-            icon={
-              <div
-                style={{
-                  width: "22px",
-                  height: "22px"
-                }}
-                className={menu.icon}
-              />
-            }
-            selectedIcon={
-              <div
-                style={{
-                  width: "24px",
-                  height: "24px",
-                  color: "#B4282D"
-                }}
-                className={menu.icon}
-              />
-            }
-            // 标题
-            title={menu.title}
-            // key
-            key={menu.path}
-            // 是否选中
-            selected={this.state.selectedTab === menu.path}
-            // // 点击触发
-            onPress={() => {
-              this.setState({
-                selectedTab: menu.path
-              });
-              this.props.history.replace(menu.path)
-            }}
-          ></TabBar.Item>
+        <TabBar.Item
+          icon={
+            <div
+              style={{
+                width: "22px",
+                height: "22px"
+              }}
+              className={menu.icon}
+            />
+          }
+          selectedIcon={
+            <div
+              style={{
+                width: "22px",
+                height: "22px",
+                color: "#B4282D"
+              }}
+              className={menu.icon}
+            />
+          }
+          // 标题
+          title={menu.title}
+          // key
+          key={menu.path}
+          // 是否选中
+          selected={this.state.selectedTab === menu.path}
+          // // 点击触发
+          onPress={() => {
+            this.setState({
+              selectedTab: menu.path
+            });
+            this.props.history.replace(menu.path);
+          }}
+        ></TabBar.Item>
       );
     });
   };
@@ -58,7 +58,7 @@ export default class TabBarExample extends Component {
     return (
       <div
         className="w-tabBar"
-        style={{position: "fixed", height: "100%", width: "100%", top: 0}}
+        style={{ position: "fixed", height: "100%", width: "100%", top: 0 }}
       >
         <TabBar
           unselectedTintColor="#949494"

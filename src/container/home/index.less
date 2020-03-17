@@ -1,0 +1,124 @@
+.homeContainer {
+  width: 375px;
+  height: 100%;
+  padding: 88px 0 0;
+  background-color: #eee;
+  .home_headers {
+    width: 100%;
+    height: 88px;
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    .home_header {
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
+      height: 44px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding: -5px 0;
+      background-color: #fff;
+      h1 {
+        // font-size: 0;
+        img {
+          width: 75px;
+          font-size: 18px;
+          margin: 0 10px;
+        }
+      }
+      .home_header_search{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 220px;
+        height: 28px;
+        background-color: #EDEDED;
+        border-radius:5px;
+        span{
+          font-size: 14px;
+          color: #666;
+          margin-left: 3px;
+        }
+      }
+      
+      .home_header_login{
+        line-height: 20px;
+        color: red;
+        padding: 2px 1px;
+        text-align: center;
+        width: 36px;
+        height: 20px;
+        // text-align: center;
+        vertical-align: middle;
+        font-size: 12px;
+        margin-left: 10px;
+        margin-right: 7px;
+        border-radius: 4px;
+        border: 1px solid red;
+        border-color: red;
+        border-radius: 5px;
+      }
+    }
+    // .home_nav{
+    //   width: 100%;
+    //   height: 45px;
+    //   // .home_nav_tab{
+    //   //   padding: 5px 5px;
+    //   //   .tab{
+    //   //   }
+    //   // }
+    // }
+  }
+  .home_swiper{
+    margin-top: 2px;
+    // margin-left: auto;
+    // margin-right: auto;
+    // position: relative;
+    overflow: hidden;
+    // z-index: 1;
+    .swiper-wrapper{
+      width: 100%;
+      // z-index: 1;
+      display: flex;
+      .swiper-slide{
+        width: 100%;
+        
+      }
+      img{
+        width: 100%;
+        height: 100%;
+        // position: absolute;
+        // left: 0;
+        // top: 50%;
+      }
+    }
+    .swiper-pagination{
+      position: absolute;
+      text-align: center;
+      transition: .3s;
+      transform: translate3d(0,0,0);
+      z-index: 10;
+      left: 0;
+      bottom: .4rem;
+      width: 100%;
+    }
+  }
+  .home_indexServicePolicy{
+    // margin-top: 187px;
+    width: 100%;
+    background-color: #fff;
+    .grow{
+      width: 100%;
+      height: 40px;
+      padding: 0 5px;
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      zoom: 1;
+      -webkit-box-align: center;
+    }
+  }
+}

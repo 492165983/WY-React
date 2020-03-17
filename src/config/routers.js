@@ -1,15 +1,15 @@
 // 路由配置
 
-// 主页
-import Home from '../container/home';
+// 主页  按需加载   绝对路径
+import Home from '$cont/home';
 // 分类
-import Category from '../container/category';
+import Category from '$cont/category';
 // 值得买
-import Topic from '../container/topic';
+import Topic from '$cont/topic';
 // 购物车
-import Shopping from '../container/shopping';
+import Shopping from '$cont/shopping';
 // 个人
-import Person from '../container/person';
+import Person from '$cont/person';
 
 export default [
   {
@@ -36,7 +36,8 @@ export default [
   {
     title: '购物车',
     icon: 'icon iconfont icongouwuche',
-    path : '/myshopshoppong',
+    // path : '/myshopshoppong',
+    path : '/shoppong',
     component:  Shopping,
     exact: true
   },
